@@ -7,7 +7,7 @@ using .LRCS
 
 cfg = LRCS.LRCSConfig(
     data = LRCS.DataSpec(
-        infile = "/Users/fberon/Documents/Matlab/Pub/LagDyn/lrcs/irma.nc",
+        infile = "data/irma.nc",
         lon_name = "longitude",
         lat_name = "latitude",
         time_name = "time",
@@ -31,7 +31,6 @@ cfg = LRCS.LRCSConfig(
         peak_min_dist = 15,
         smooth_passes = 1,
         contraction_npts = 300,
-        plot_quiver_step = 8,
     ),
     output = LRCS.OutputSpec(
         outfile = "output.nc",

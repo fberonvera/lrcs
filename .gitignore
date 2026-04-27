@@ -1,7 +1,2 @@
-
-.DS_Store
-*~
 *.nc
-*.png
-*.pdf
-
+!data/irma.nc
