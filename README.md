@@ -8,11 +8,11 @@ LRCS are materially defined regions that combine:
 
 This repository provides an implementation of the detection procedure described in:
 
-F. J. Beron-Vera (2026), "Lagrangian rotating contracting structures", Chaos (submitted). 
+F. J. Beron-Vera (2026), "Lagrangian rotating contracting structures", Chaos (submitted).
 
 ---
 
-## Markdown
+## Origin of the code
 
 This Julia implementation is an adaptation, with assistance from ChatGPT, of MATLAB codes originally developed by F. J. Beron-Vera. The numerical methodology, detection strategy, and scientific design originate from those MATLAB implementations. The present code translates that workflow into Julia while preserving its structure and intent.
 
@@ -60,6 +60,7 @@ A(t1) / A(t0) < 1
 
 lrcs.jl        Core implementation  
 lrcs_run.jl    Driver script  
+data/irma.nc   Example Hurricane Irma velocity data  
 README.md      Documentation  
 
 ---
@@ -72,11 +73,19 @@ README.md      Documentation
 
 ---
 
-## Usage
+## Quick start
 
-Run the driver script:
+Run:
 
 julia lrcs_run.jl
+
+This uses the included Hurricane Irma example:
+
+data/irma.nc
+
+---
+
+## Usage
 
 Typical workflow:
 
